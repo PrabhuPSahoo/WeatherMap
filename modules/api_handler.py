@@ -1,6 +1,7 @@
 import requests
 import logging
 from datetime import datetime, timezone
+import streamlit as st
 API_KEY = st.secrets["api"]["API_KEY"]
 def get_weather(city):
     BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
